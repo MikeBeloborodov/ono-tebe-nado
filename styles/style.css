@@ -159,10 +159,9 @@ a {
 }
 
 .lots__card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
   list-style: none;
 }
 
@@ -176,8 +175,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 430px;
   min-height: 450px;
+  width: auto;
   padding: 50px 40px;
 }
 
@@ -227,13 +226,17 @@ a {
 
 .about {
   display: grid;
-  grid-template-columns: 430px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 24px;
   padding: 0 50px;
 }
 
 .about__column {
   justify-self: center;
+}
+
+.about__column_text {
+  grid-column: 2/4;
 }
 
 .about__logo {
