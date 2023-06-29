@@ -6,7 +6,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: 183px;           
+  gap: 183px;
 }
 
 a {
